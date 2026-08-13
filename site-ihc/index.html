@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Centrado no Humano | Flutter Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Simples e Fixo -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>IHC Tech</span>
+            </div>
+            <div class="nav-links">
+                <span class="nav-item">Atividade 07</span>
+                <a href="#comecar" class="btn-primary">Explorar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Interfaces Humano-Computador</span>
+            <h1>Projete para quem<br><span class="text-gradient">realmente importa.</span></h1>
+            <p>O ser humano no centro de cada decisão arquitetural, desde a interface até a estrutura de dados.</p>
+            
+            <!-- Gráfico CSS simulando UI -->
+            <div class="hero-visual">
+                <div class="mockup-window glass">
+                    <div class="mockup-header">
+                        <i></i><i></i><i></i>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="skeleton-line w-70"></div>
+                        <div class="skeleton-line w-40"></div>
+                        <div class="skeleton-box"></div>
+                    </div>
+                </div>
+                <div class="floating-card float-1 glass">Focus on User</div>
+                <div class="floating-card float-2 glass">Iterative Design</div>
+            </div>
+        </div>
+    </header>
+
+    <main id="comecar">
+        <!-- Seção 1: Texto Esquerda / Visual Direita -->
+        <section class="split-section">
+            <div class="section-container">
+                <div class="text-content">
+                    <h2 class="section-title">Qual é o foco principal do design centrado no humano?</h2>
+                    <p class="section-desc">O foco absoluto é colocar os <strong>usuários e stakeholders no centro de todas as atenções</strong> e processos do design.</p>
+                    <p class="section-desc">Isso significa abandonar o "achismo" técnico e projetar tecnologias baseadas no entendimento profundo de como essas pessoas se comportam, sentem, percebem, além de suas limitações físicas e o contexto em que estão inseridas.</p>
+                </div>
+                <div class="visual-content">
+                    <div class="abstract-circle">
+                        <div class="core-human">Human Center</div>
+                        <div class="orbiting-dot dot-1"></div>
+                        <div class="orbiting-dot dot-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Visual Esquerda / Texto Direita -->
+        <section class="split-section reverse bg-darker">
+            <div class="section-container">
+                <div class="visual-content">
+                    <div class="grid-cards">
+                        <div class="mini-card glass">1. Foco Precoce</div>
+                        <div class="mini-card glass">2. Medições Empíricas</div>
+                        <div class="mini-card glass accent">3. Projeto Iterativo</div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 class="section-title">Quais são os três princípios base mencionados na aula?</h2>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Foco precoce nos usuários e tarefas:</strong> Mapear quem é o usuário e o que ele faz logo no início do ciclo de vida, usando observação e entrevistas.
+                        </li>
+                        <li>
+                            <strong>Medições empíricas:</strong> Avaliar o uso real testando protótipos com pessoas representativas para antecipar problemas de usabilidade.
+                        </li>
+                        <li>
+                            <strong>Projeto Iterativo:</strong> Aceitar que não vai acertar de primeira. É um ciclo contínuo de design, teste e refinamento até atingir as métricas.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Banner Largo Centralizado -->
+        <section class="banner-section">
+            <div class="banner-container glass-banner">
+                <div class="banner-text">
+                    <span class="highlight-tag">Mindset</span>
+                    <h2>Como o Design Thinking se relaciona com tudo isso?</h2>
+                    <p>Ele compartilha as exatas mesmas raízes, mas o Design Thinking atua para <strong>descentralizar a prática do design</strong>. Ele empacota as técnicas centradas no humano para que profissionais de negócios, marketing ou políticas públicas (não apenas engenheiros) possam criar soluções inovadoras para problemas complexos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Texto Esquerda / Visual Direita -->
+        <section class="split-section">
+            <div class="section-container">
+                <div class="text-content">
+                    <h2 class="section-title">Em qual contexto usamos a norma ISO 9241-210?</h2>
+                    <p class="section-desc">Ela é o guia mestre no <strong>projeto e desenvolvimento de sistemas interativos</strong>.</p>
+                    <p class="section-desc">A norma dita as regras de ergonomia e fatores humanos, exigindo que o projeto abranja a totalidade da experiência (visão 360 graus), que o usuário seja engajado durante todo o ciclo e que a equipe de desenvolvimento seja obrigatoriamente multidisciplinar.</p>
+                </div>
+                <div class="visual-content">
+                    <div class="code-window glass">
+                        <div class="mockup-header"><i></i><i></i><i></i></div>
+                        <pre><code><span class="code-keyword">import</span> { ISO_9241_210 } <span class="code-keyword">from</span> 'usability';
+                        
+<span class="code-comment">// Requisitos da norma</span>
+<span class="code-func">system</span>.build({
+  multidisciplinaryTeam: <span class="code-value">true</span>,
+  userInvolvement: <span class="code-string">'continuous'</span>,
+  experienceScope: <span class="code-string">'360_degrees'</span>
+});</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Visual Esquerda / Texto Direita -->
+        <section class="split-section reverse bg-darker">
+            <div class="section-container">
+                <div class="visual-content">
+                    <div class="sprint-visual">
+                        <div class="sprint-box ux-box">Sprint UX (N+1)</div>
+                        <div class="sprint-line"></div>
+                        <div class="sprint-box dev-box">Sprint DEV (N)</div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 class="section-title">Como ocorre a integração de UX com os Métodos Ágeis?</h2>
+                    <p class="section-desc">A equipe de UX (Design) trabalha em paralelo, mas sempre <strong>um Sprint à frente</strong> da equipe de desenvolvimento (Software).</p>
+                    <p class="section-desc">No <em>Sprint 0</em>, UX desenha a experiência enquanto Dev faz a arquitetura. No <em>Sprint 1</em>, Dev implementa o que foi desenhado, enquanto UX já está pesquisando e desenhando o <em>Sprint 2</em>, além de validar as entregas do Dev.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 6: Timeline/Passo a Passo (Centralizado) -->
+        <section class="timeline-section">
+            <div class="section-container col">
+                <h2 class="section-title text-center">Quais são as etapas de elaboração?</h2>
+                <p class="section-desc text-center">O fluxo de vida do projeto centrado no usuário.</p>
+                
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <h3>Planejamento</h3>
+                        <p>Identificar técnicas necessárias e montar as equipes multidisciplinares.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <h3>Contexto de Uso</h3>
+                        <p>Entender stakeholders, objetivos e mapear o ambiente e ferramentas atuais.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <h3>Requisitos</h3>
+                        <p>Especificar metas de usabilidade e requisitos sócio-técnicos.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">04</div>
+                        <h3>Design</h3>
+                        <p>Criar a solução, indo do modelo conceitual até os protótipos de alta fidelidade.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">05</div>
+                        <h3>Avaliação</h3>
+                        <p>Testar os protótipos com usuários reais. Se falhar, repete o ciclo iterativo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perfil do Desenvolvedor -->
+        <section class="dev-footer-section">
+            <div class="dev-profile-large glass">
+                <img src="foto.jpg" alt="Carlos Lucas da Silva" class="dev-img">
+                <div class="dev-info">
+                    <h3>Carlos Lucas da Silva</h3>
+                    <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+                    <a href="https://github.com/Thelaw90" target="_blank" class="github-link">Ver no GitHub -></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de IHC - Interfaces Humano-Computador.</p>
+    </footer>
+
+    <!-- Motor de Animação de Scroll -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. Seleciona os blocos principais que queremos animar
+            const elementos = document.querySelectorAll('.section-container, .banner-container, .timeline-section .col, .dev-profile-large');
+
+            // 2. Adiciona a classe de estado 'invisível' neles assim que a página carrega
+            elementos.forEach((el) => {
+                el.classList.add('hidden-element');
+            });
+
+            // 3. Cria o "Olheiro" (Observer)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    // Se o elemento entrou na tela...
+                    if (entry.isIntersecting) {
+                        // Adiciona a classe que faz ele aparecer
+                        entry.target.classList.add('show-element');
+                        
+                        // Para de observar depois que apareceu uma vez
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15 // A animação dispara quando 15% do elemento está visível
+            });
+
+            // 4. Manda o olheiro vigiar todos os elementos que selecionamos
+            elementos.forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
